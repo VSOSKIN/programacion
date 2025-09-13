@@ -1,0 +1,24 @@
+/*esto es un comentario en CSS*/
+
+h1{
+    color: red;/*color de la fuente*/    
+    font-family: Arial, Helvetica, sans-serif;/*tipo de fuente*/
+    background-color: yellow;/*fondo de color liso*/
+    text-align: center;/*alineasion de texto */
+    text-transform: uppercase; /*mayusculas*/
+}
+p{
+color: green;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+line-height: 35px; /*altura de linea*/
+}
+
+
+h2{color: blue;}
+
+.destacados{
+    color: orange;
+    font-size: 20px;/*tamaño de la fuente*/
+    font-weight: bold; /*negrita (se puede poner en numeros tambien)*/
+    font-style: italic;/*cursiva*/
+}
