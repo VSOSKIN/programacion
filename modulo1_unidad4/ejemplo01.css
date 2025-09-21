@@ -1,0 +1,19 @@
+#caja {
+    /*esto es un comentario en css*/
+    background: linear-gradient(0deg, #dd00ff 10%, #ff0046 30%, rgba(238, 255, 0, 0.9) 50%);
+    /*color de fondo*/
+    width: 300px;
+    /*ancho*/
+    height: 300px;
+    /*alto*/
+    padding: 20px;
+    /*relleno interno*/
+    margin: 50px;
+    /*margen externo*/
+    box-shadow: 10px 20px 10px black;
+    /*eje X - eje Y - blur(desenfocado) - color*/
+    /*border-radius: 50px (bordes redondeados todos iguales)*/
+    /*border-radius: 20px 30px; (borde 1 y 3 - borde 2 y 4)*/
+    border-radius: 20px 0 0
+        /*(borde 1-bordes 2 y 4-borde 3)*/
+}

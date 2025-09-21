@@ -1,0 +1,23 @@
+/*   font-family: "Kablammo", system-ui; 
+p: font-family: "Shantell Sans", cursive;
+*/
+
+.texto{
+    color: red;
+    column-count: 2; /*cantidad de columnas*/
+    column-gap: 50px; /*espacio entre columnas*/
+}
+
+h1, h2{
+    color: green;
+    font-family: "Kablammo", system-ui; 
+}
+
+p{
+    font-family: "Shantell Sans", cursive;
+}
+
+.iconos{
+    color: blue;
+    font-size: 100px;
+}
