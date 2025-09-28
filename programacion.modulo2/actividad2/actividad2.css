@@ -1,0 +1,31 @@
+#container {
+     border: solid black;
+     height: 500px;
+     width: 500px;
+display: flex; 
+flex-direction: row-reverse; 
+justify-content: center;
+align-items: center;}
+#rojo {
+    background-color: red;
+    color: white;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    line-height: 200px;}
+#azul {
+    background-color: blue;
+    color: white;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    line-height: 200px;}
+#verde {
+    background-color: green;
+    color: white;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    line-height: 200px;
+}
+

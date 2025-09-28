@@ -1,0 +1,27 @@
+div{
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    cursor: pointer; /*cambia el cursos al pasar por encima*/
+}
+
+div:hover{
+    background-color: orange;
+}
+
+span{
+    background-color: yellow;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+span::after{
+    content: ' despues';
+    background-color: red;
+    color: white;
+}
+span::before{
+    content: ' antes';
+    background-color: blue;
+    color: white;
+}
