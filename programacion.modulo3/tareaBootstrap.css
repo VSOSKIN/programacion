@@ -1,0 +1,42 @@
+img {
+width: 200px;
+height: auto;
+}
+
+h1{
+    text-align: center;
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+font-family: Verdana;
+font-weight: bold; 
+background-color: yellow;
+}
+
+.card{
+   background-color: yellow;
+}
+
+.container{
+   background-color: black;
+}
+
+.mb-3{
+color: white;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: yellow;
+      font-family: Verdana;
+font-weight: bold; 
+}
+
+.accordion-body {
+    color: black;
+  font-family: Verdana;
+font-weight: bold; 
+}
+
+
+
+
+
+
