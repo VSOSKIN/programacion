@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+/* font-family: "Open Sans", sans-serif;*/
+body/*contenido de mi sitio*/{
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    /*tamaño que arranco*/
+    line-height: 20px;
+    /*alto de lineas para que se vayan separando*/}
+header/*cabecera*/{
+    background-color: #2e64a1;
+    padding: 16px 0;}
+header h1/*posicionamiento del texto*/{
+    color: white;
+    font-size: 40px;
+    font-weight: 100;
+    font-style: italic;
+    display: inline-block;/*o tambien se puede poner inline-flex*/
+    position: relative;
+    bottom: 35px;
+    margin-left: 10px;}
+nav/*navegacion*/{
+    background-color: #6da9ed;
+    margin-bottom: 20px;}
+nav ul/*el padre de todos los elementos*/{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;}
+
+nav ul li/*toda la botonera*/{
+    flex-grow: 1;/*se adapta al tamaño o es un factor de crecimiento*/}
+nav ul li a/*poner la manito*/{
+    color: white;
+    text-decoration: none;
+    padding: 3px 6px;
+    display: block;
+    text-align: center;}
+nav ul li a:hover/*cambia de color cuando apoyo la manito*/{
+    background-color: #4c76a5;}
+nav ul li a.activo/*queda fijo el color*/{
+    background-color: #4c76a5;}
+footer/*cambia de color cuando apoyo la manito*/{
+    background-color: #ccc;
+    clear: both;
+    color: #333;
+    text-align: center;
+    padding: 5px 0;
+    margin-top: 20px;}
+.holder {
+    max-width: 960px;
+    margin: 0 auto;}
+h2 {
+    color: #2e64a1;
+    font-weight: 400;}
+/*inicio home*/
+.bienvenidos {
+    width: 75%;
+    padding-right: 10px;
+    box-sizing: border-box;}
+.testimonios {
+    width: 20%;}
+.columnas {
+    display: flex;
+    justify-content: space-between;}
+.bienvenidos p {
+    font-size: 20px;}
+.testimonios {
+    background-color: #ccc;
+    padding: 16px;}
+.testimonios .cita {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 22px;
+    background-color: yellow;
+    display: block;}
+.testimonios .autor {
+    font-size: 10px;
+    text-align: center;
+    background-color: lightcoral;
+    display: block;
+    margin: 12px 0;}
+
+    /*fin home*/
+    /*inicio nosotros*/
+
+    .historia p {
+        font-size: 12px;
+   }
+
+       .personas {
+        display: flex;
+        justify-content: space-between;
+   }
+
+       .persona {
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        width: 18%;
+        text-align: center;
+        padding: 13px;
+        box-sizing: border-box;
+   }
+
+       .personas img {
+       border-radius: 50%;
+       max-width: 60%;
+       box-shadow: 0 0 5px;
+   }
+
+          .personas h5, .persona h6{
+       margin: 0%;
+       font-weight: normal;
+       color: #2e64a1;
+   }
+   
+       .personas p {
+      color: #666;
+      font-size: 10px;
+   }
+   
+    /*fin nosotros*/
+   
+
+  /*inicio servicios*/
+.servicio {
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 16px;
+      margin: 16px 0;
+      display: flex;
+   gap: 32px;
+      align-items: center;
+   }
+   .servicio .info h4{
+ color: #2e64a1;
+ font-weight: 500;
+ font-style: italic;
+ border-bottom: 1px solid #2e64a1;
+ padding-bottom: 10px;
+   }
+   .servicio .info p {
+font-size: 13px;
+line-height: 19px;
+   }
+     .servicio img {
+border-radius: 13px;
+display: block;
+max-width: 225px;
+   }
+     .servicio:nth-child(even) /*pares*/{
+flex-direction: row-reverse;
+   }
+
+   
+
+   
+   
+    /*fin servicios*/

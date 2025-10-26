@@ -8,15 +8,11 @@ h1{
 text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 font-family: Verdana;
 font-weight: bold; 
-background-color: yellow;
 }
 
-.card{
-   background-color: yellow;
-}
+.container-fluid{
+ background-color: gray;
 
-.container{
-   background-color: black;
 }
 
 .mb-3{
@@ -24,7 +20,6 @@ color: white;
 }
 
 .accordion-button:not(.collapsed) {
-    background-color: yellow;
       font-family: Verdana;
 font-weight: bold; 
 }
@@ -35,7 +30,19 @@ font-weight: bold;
 font-weight: bold; 
 }
 
-
+.container-fluid img {
+  width: 140px; 
+      height: auto;
+      border-radius: 50px; 
+      border-color: black;
+      display: flex;
+    justify-content: flex-start;
+    padding: 0%;
+  }
+.container-fluid h1 {
+ 
+    
+}
 
 
 

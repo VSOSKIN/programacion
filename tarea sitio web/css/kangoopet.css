@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+body
+
+/*contenido de mi sitio*/
+    {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    /*tamaño que arranco*/
+    line-height: 20px;
+    /*alto de lineas para que se vayan separando*/
+}
+
+header
+
+/*cabecera*/
+    {
+    background-color: #458246;
+    padding: 16px 0;
+    }
+
+
+header img {
+    width: 250px;
+    padding: 0%;
+    margin-top: auto;
+    margin-left: 40px;
+  
+}
+   .navbar {
+ font-size: 40px;
+    font-weight: 100;
+    display: inline-block;/*o tambien se puede poner inline-flex*/
+    position:static;
+    bottom: 35px;
+    margin-left: 50px;
+border-radius: 10px;}
+
+nav
+
+/*navegacion*/
+    {
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+nav ul
+
+/*el padre de todos los elementos*/
+    {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li
+
+/*toda la botonera*/
+    {
+    justify-content: center;
+
+}
+
+nav ul li a
+
+/*poner la manito*/
+    {
+    color: #458246;
+    text-decoration: none;
+    padding: 3px 6px;
+    display: block;
+    text-align: center;
+     border-radius: 5px;
+}
+
+nav ul li a:hover
+
+/*cambia de color cuando apoyo la manito*/
+    {
+    background-color: rgb(248, 224, 42);
+     border-radius: 5px;
+}
+
+nav ul li a.activo
+
+/*queda fijo el color*/
+    {
+    background-color: rgb(248, 224, 42);
+}
+footer{
+    background-color: #ccc;
+    clear: both;
+    color: #333;
+    text-align: center;
+    padding: 5px 0;
+    margin-top: 20px;}
