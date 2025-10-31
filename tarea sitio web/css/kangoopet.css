@@ -9,6 +9,7 @@ body
     /*tamaño que arranco*/
     line-height: 20px;
     /*alto de lineas para que se vayan separando*/
+    background-color: black;
 }
 
 header
@@ -17,7 +18,7 @@ header
     {
     background-color: #458246;
     padding: 16px 0;
-    }
+}
 
 
 header img {
@@ -25,23 +26,26 @@ header img {
     padding: 0%;
     margin-top: auto;
     margin-left: 40px;
-  
+
 }
-   .navbar {
- font-size: 40px;
+
+.navbar {
+    font-size: 40px;
     font-weight: 100;
-    display: inline-block;/*o tambien se puede poner inline-flex*/
-    position:static;
+    display: inline-block;
+    /*o tambien se puede poner inline-flex*/
+    position: static;
     bottom: 35px;
     margin-left: 50px;
-border-radius: 10px;}
+    border-radius: 10px;
+}
 
 nav
 
 /*navegacion*/
     {
-    background-color: white;
     margin-bottom: 20px;
+    background-color: black;
 }
 
 nav ul
@@ -67,32 +71,187 @@ nav ul li a
 
 /*poner la manito*/
     {
-    color: #458246;
+    color: white;
     text-decoration: none;
     padding: 3px 6px;
     display: block;
     text-align: center;
-     border-radius: 5px;
+    border-radius: 5px;
 }
 
 nav ul li a:hover
 
 /*cambia de color cuando apoyo la manito*/
     {
-    background-color: rgb(248, 224, 42);
-     border-radius: 5px;
+    background-color: #458246;
+    border-radius: 5px;
 }
 
 nav ul li a.activo
 
 /*queda fijo el color*/
     {
-    background-color: rgb(248, 224, 42);
+    background-color: #458246;
 }
-footer{
+
+footer {
     background-color: #ccc;
     clear: both;
     color: #333;
     text-align: center;
     padding: 5px 0;
-    margin-top: 20px;}
+    margin-top: 20px;
+}
+
+.row .col {
+    color: white;
+    text-align: center;
+}
+h5 {
+text-decoration: underline;
+font-weight: bold;}
+
+ .registrate {
+background-color: #458246;
+color: white;
+display: block;
+ }
+
+ h4 {
+font-weight: bold;
+color: white;
+font-size: 20px;
+}
+
+
+.registrate button:hover
+
+/*cambia de color cuando apoyo la manito*/
+    {
+    background-color: orange;
+    border-radius: 5px;
+} 
+
+.registrate button
+
+/*cambia de color cuando apoyo la manito*/
+    {
+    background-color: white;
+    border-radius: 5px;
+    color: #458246;
+    background-color: white;
+} 
+
+/*fin home*/
+/*inicio perros*/
+
+ .marcas {
+        display: flex;
+        justify-content: space-between;
+        color: white;
+        column-gap: 20px;
+   }
+
+     .marca {
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        width: 18%;
+        text-align: center;
+        padding: 13px;
+        box-sizing: border-box;
+   }
+
+          .marca img {
+       border-radius: 70%;
+       max-width: 90%;
+       box-shadow: 0 0 5px;
+       margin-bottom: 10px;
+   }
+
+         .marcas h6{
+       margin: 0%;
+       font-weight: normal;
+       color: green;
+       margin-top: 10px;
+   }
+   
+   .marcas h5{
+color: white;
+   }
+   
+       .marcas p {
+      color: white;
+      font-size: 20px;
+      margin-top: 20px;
+      color: white;
+   }
+
+          h2 {
+      color: white;
+      font-size: 20px;
+      margin-bottom: 20px;
+   }
+   .marcas h5:hover{
+    background-color: green;
+   }
+
+ h5 a/*poner la manito*/{
+    color: white;
+    text-decoration: none;
+    padding: 3px 6px;
+    display: block;
+    text-align: center;}
+    /*fin perros*/
+
+
+    /*inicio gatos*/
+     .gato:nth-child(even) /*pares*/{
+flex-direction: row-reverse;
+   }
+
+.gatosalimentos {
+        display: flex;
+        justify-content: space-between;
+        color: white;
+        column-gap: 10px;
+   }
+
+
+   .gato {
+border: 1px solid #ccc;
+        border-radius: 5px;
+        width: 18%;
+        text-align: center;
+        padding: 13px;
+        box-sizing: border-box;
+    
+   }
+   .gatosalimentos .gato h5{
+ color: white;
+ font-weight: 500;
+ font-style: italic;
+ border-bottom: 1px solid white;
+ padding-bottom: 10px;
+ align-items: center;
+   }
+      .gatosalimentos .gato h6{
+ color: green;
+ font-weight: 500;
+ font-style: italic;
+ border-bottom: 1px solid green;
+ padding-bottom: 10px;
+   }
+   .gatosalimentos .gato p{
+font-size: 13px;
+line-height: 19px;
+color: white;
+   }
+     .gato img {
+border-radius: 13px;
+max-width: 150px;
+align-self: flex-start;
+margin-bottom: 10px;
+   }
+
+
+    /*fin gatos*/
