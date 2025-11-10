@@ -221,62 +221,40 @@ color: white;
 
 
     /*inicio gatos*/
-     .gato:nth-child(even) /*pares*/{
-flex-direction: row-reverse;
-   }
 
-.gatosalimentos {
+ .gatosalimentos{
         display: flex;
         justify-content: space-between;
-        box-sizing: border-box;
         color: white;
-        column-gap: 10px;
-        word-wrap: break-word;
-        flex-wrap: nowrap;
+        column-gap: 20px;
+         max-width: 100%; 
+  max-height: 100%;
+  box-sizing: border-box;
+  flex-wrap: nowrap;
    }
 
-
-   .gato {
-border: 1px solid #ccc;
+     .gato {
+        border: 1px solid #ccc;
         border-radius: 5px;
-        width: 18%;
+        width: 100%;
         text-align: center;
-        padding: 13px;
+        padding: 0%;
         box-sizing: border-box;
+        align-items: center;
+        flex-direction: column;
 
-flex-wrap: nowrap;
-align-items: center;
-    
+        
    }
-   .gatosalimentos .gato h5{
- color: white;
- font-weight: 500;
- font-style: italic;
- border-bottom: 1px solid white;
- padding-bottom: 10px;
- align-items: center;
-   }
-      .gatosalimentos .gato h6{
- color: green;
- font-weight: 500;
- font-style: italic;
- border-bottom: 1px solid green;
- padding-bottom: 10px;
-   }
-   .gatosalimentos .gato p{
-font-size: 13px;
-line-height: 19px;
-color: white;
-   }
-     .gato img {
-border-radius: 13px;
-max-width: 100px;
-align-self: flex-start;
-margin-bottom: 10px;
+
+.gatosalimentos img{
+  width: 90%;
+border: 5px;
+padding: 0,3px;
 box-sizing: border-box;
- max-width: 100%; 
-  max-height: 100%;  
-   }
+margin-bottom: 20px;
+margin-right: 2%;
+border-radius: 40px;
+}
 
 
     /*fin gatos*/
@@ -379,7 +357,6 @@ height: 150px;
             background-color: yellow;
           }
           /*fin contacto*/
-
 
 
 
