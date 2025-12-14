@@ -1,4 +1,4 @@
-//import "./globals.css";
+import '@/styles/globals.css';
 import Nav from "@/componentes/Nav";
 
 export const metadata = {
@@ -16,8 +16,6 @@ export default function RootLayout({ children }) {
               <img src="/fotos/logo.png" alt="Logo KangooPet" width={100}/>
             </div>
             <div className="textoheader">
-              <h1>KANGOOPET</h1>
-              <h2>Tu tienda de mascotas online</h2>
             </div>
           </div>
          </header>

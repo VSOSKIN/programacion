@@ -1,0 +1,23 @@
+.holder-promociones{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+    
+     }
+          .subtitle img{
+     width: 30%;
+border: 10px solid green;
+padding: 0,3px;
+box-sizing: border-box;
+margin-bottom: 20px;
+margin-right: 2%;
+box-shadow: orange 10px 5px 3px;
+    
+     }
+
+     .subtitle{
+        color: white;
+    
+
+     }

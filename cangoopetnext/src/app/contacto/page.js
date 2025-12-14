@@ -16,11 +16,11 @@ export default function Contacto() {
                     <h2>otras vias de comunicacion</h2>
                     <p>tambien puede contactarse con nosotros usando los siguientes medios.</p>
                     <ul>
-                        <li>Telefono:</li>
-                        <li>Email:</li>
-                        <li>facebook</li>
-                        <li>twitter</li>
-                        <li>instagram</li>
+                        <li>Telefono</li>
+                        <li>Email</li>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
 
                     </ul>
                 </div>
