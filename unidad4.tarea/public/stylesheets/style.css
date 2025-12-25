@@ -7,7 +7,7 @@ body
     /*tamaño que arranco*/
     line-height: 20px;
     /*alto de lineas para que se vayan separando*/
-    background-color: black;
+    background-color: white;
 }
 
 header
@@ -124,7 +124,7 @@ font-size: 20px;
 
  h1 {
 
-color: white;
+color: black;
 font-size: 20px;
 margin-bottom: 20px;
 }

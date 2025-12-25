@@ -1,3 +1,9 @@
+.perrospage {
+background-color: #121212;
+color: white;
+}
+
+
 .marcas {
   display: flex;
   flex-wrap: wrap; /* Permite que los elementos bajen a la siguiente fila */
