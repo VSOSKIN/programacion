@@ -1,86 +1,45 @@
-var createError = require('http-errors');
+require('dotenv').config();
+
 var express = require('express');
 var path = require('path');
+
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
-var session = require('express-session');
+const loginRouter = require('./routes/login');
+const adminRouter = require('./routes/admin');
 
 var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
-var loginRouter = require('./routes/admin/login');
 
-var app = express();
+var app = express();   // 👈 ESTO DEBE IR ANTES DE app.use
 
-// view engine setup
+const session = require('express-session');
+
+app.use(session({
+  secret: 'mi_clave_secreta', // cualquier frase secreta
+  resave: false,
+  saveUninitialized: true,
+  cookie: { maxAge: 60 * 60 * 1000 } // 1 hora
+}));
+
+// view engine
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
 
-app.use(logger('dev'));
+// middlewares
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
-app.use(cookieParser());
+
+// css
 app.use(express.static(path.join(__dirname, 'public')));
 
+// rutas
+app.use('/', indexRouter);
+app.use('/admin', loginRouter);
+app.use('/admin', adminRouter);
 
-
-
-
-
-
-
-app.use(session({
-  secret: 'djwdkfgfiewogfiekdwqj',
-  resave: false,
-  saveUninitialized: true,
-}));
-
-//app.use('/', indexRouter);
-//app.use('/users', usersRouter);
-//app.use('/admin/login', loginRouter);
-
-
-
-app.get('/' , function(req, res) {
-  var conocido = Boolean(req.session.nombre);
-
-  res.render('index', {
-    title: 'Sesiones en Express.js',
-    conocido: conocido,
-    nombre: req.session.nombre
-  });
-}
-  )
-//capturando 
-//var nombre = req.body.nombre; // victoria
-
-
-app.post('/ingresar' , function(req, res) {
-    if (req.body.nombre) {
-      req.session.nombre = req.body.nombre
-    }
-    res.redirect('/');
-  });
-
-  app.get('/salir' , function(req, res) {
-    req.session.destroy();
-    res.redirect('/');
-  });
-
-
-// catch 404 and forward to error handler
-app.use(function(req, res, next) {
-  next(createError(404));
-});
-
-// error handler
-app.use(function(err, req, res, next) {
-  // set locals, only providing error in development
-  res.locals.message = err.message;
-  res.locals.error = req.app.get('env') === 'development' ? err : {};
-
-  // render the error page
-  res.status(err.status || 500);
-  res.render('error');
+// ruta raíz
+app.get('/', (req,res)=>{
+  res.redirect('/admin/login');
 });
 
 module.exports = app;
